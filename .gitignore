@@ -1,0 +1,24 @@
+*.pyc
+*__pycache__*
+*.png
+*.tex
+.stfolder
+.stignore
+*sync-conflict*
+.idea/
+
+# ignore all .log files
+umbms/**/*.log
+*.log*
+
+*.swp
+*.DS_Store
+.metadata/
+
+.project
+.pydevproject
+.settings/
+.stversions/
+
+
+data/**
