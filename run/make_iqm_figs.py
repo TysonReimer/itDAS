@@ -220,10 +220,10 @@ def plot_smr_by_birads(save_fig=False):
     # Define xs for making the plot
     plot_xs = np.arange(1, 5)
 
-    plt.figure(figsize=(10, 6))  # Make fig
+    plt.figure(figsize=(10, 4))  # Make fig
     plt.rc('font', family='Times New Roman')  # Set font
 
-    plt.tick_params(labelsize=18)
+    plt.tick_params(labelsize=22)
 
     plt.errorbar(x=plot_xs, y=itdmas_iqms[0], yerr=itdmas_iqms[1],
                  label='itDMAS', color=dark_red, marker='^', capsize=10,
@@ -235,17 +235,17 @@ def plot_smr_by_birads(save_fig=False):
     plt.errorbar(x=plot_xs, y=das_iqms[0], yerr=das_iqms[1], label='DAS',
                  color='k', marker='o', capsize=10)
 
-    plt.legend(fontsize=18)
+    plt.legend(fontsize=22)
     plt.xticks(plot_xs, ['I', 'II', 'III', 'IV'])
-    plt.ylabel('SMR Magnitude (dB)', fontsize=20)
-    plt.xlabel('BI-RADS Density Class', fontsize=20)
+    plt.ylabel('SMR Magnitude (dB)', fontsize=24)
+    plt.xlabel('BI-RADS Density Class', fontsize=24)
 
     plt.tight_layout()
     plt.show()
 
     if save_fig:
         plt.savefig(os.path.join(__FIG_OUT_DIR, 'smr_by_class.png'),
-                    transparent=True, dpi=450)
+                    transparent=False, dpi=300, bbox_inches='tight')
 
 
 def plot_scr_by_birads(save_fig=False):
@@ -272,10 +272,10 @@ def plot_scr_by_birads(save_fig=False):
     # Define xs for making the plot
     plot_xs = np.arange(1, 5)
 
-    plt.figure(figsize=(10, 6))  # Make fig
+    plt.figure(figsize=(10, 4))  # Make fig1
     plt.rc('font', family='Times New Roman')  # Set font
 
-    plt.tick_params(labelsize=18)
+    plt.tick_params(labelsize=22)
 
     plt.errorbar(x=plot_xs, y=itdmas_iqms[2], yerr=itdmas_iqms[3],
                  label='itDMAS', color=dark_red, marker='^', capsize=10,
@@ -287,17 +287,17 @@ def plot_scr_by_birads(save_fig=False):
     plt.errorbar(x=plot_xs, y=das_iqms[2], yerr=das_iqms[3], label='DAS',
                  color='k', marker='o', capsize=10)
 
-    plt.legend(fontsize=18)
+    plt.legend(fontsize=22)
     plt.xticks(plot_xs, ['I', 'II', 'III', 'IV'])
-    plt.ylabel('SCR Magnitude (dB)', fontsize=20)
-    plt.xlabel('BI-RADS Density Class', fontsize=20)
+    plt.ylabel('SCR Magnitude (dB)', fontsize=24)
+    plt.xlabel('BI-RADS Density Class', fontsize=24)
 
     plt.tight_layout()
     plt.show()
 
     if save_fig:
         plt.savefig(os.path.join(__FIG_OUT_DIR, 'scr_by_class.png'),
-                    transparent=True, dpi=450)
+                    transparent=False, dpi=300, bbox_inches='tight')
 
 
 ###############################################################################

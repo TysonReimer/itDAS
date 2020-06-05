@@ -187,7 +187,7 @@ def plot_one_img_for_big_fig(ax, imgs, dists, expt_id):
     ax.set_ylim([-scan_rad + 10, scan_rad - 10])
 
     # Plot antenna trajectory, breast outline, tumour outline
-    ax.plot(antenna_xs, antenna_ys, 'k--', linewidth=2)
+    ax.plot(antenna_xs, antenna_ys, 'k--', linewidth=1)
     ax.plot(breast_xs, breast_ys, 'w--', linewidth=1)
     ax.plot(tum_xs, tum_ys, 'g', linewidth=0.5)
 
@@ -317,7 +317,7 @@ def make_big_fig(save_fig=False, save_str=''):
     fig.show()
 
     if save_fig:  # If saving the fig
-        fig.savefig(save_str, transparent=True, dpi=450,
+        fig.savefig(save_str, transparent=False, dpi=300,
                     bbox_inches='tight')
 
 
@@ -326,5 +326,5 @@ def make_big_fig(save_fig=False, save_str=''):
 if __name__ == '__main__':
 
     # Make the big figure
-    make_big_fig(save_fig=True,
+    make_big_fig(save_fig=False,
                  save_str=os.path.join(output_dir, 'four_class_recons.png'))

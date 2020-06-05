@@ -309,7 +309,7 @@ def make_fwd_proj_fig(save_fig=False):
 
     if save_fig:
         plt.savefig(os.path.join(__FIG_OUT_DIR, 'fwd_proj_fig.png'),
-                    transparent=True, dpi=450, bbox_inches='tight')
+                    transparent=False, dpi=300, bbox_inches='tight')
 
 
 ###############################################################################
