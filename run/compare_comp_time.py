@@ -23,9 +23,10 @@ from umbms.beamform.fwdproj import fwd_proj
 # Directory where time-domain sinograms are located
 __DATA_DIR = os.path.join(get_proj_path(), 'data/')
 
-__M_SIZE = 350
+__M_SIZE = 500
 
 ###############################################################################
+
 
 # Replicate the itDAS algorithm but modify to measure compute times
 def itdas(td_data, ini_t, fin_t, ant_rad, speed, m_size, ini_ant_ang=-130.0,
