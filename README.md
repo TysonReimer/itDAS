@@ -14,14 +14,15 @@ repository, place the data files into the `../data/` directory.
 The .stl files of the 3D-printable phantoms used in this investigation
 are available [here](https://bit.ly/itDAS-phantoms).
 
-1. Hagness, S.C; Taflove, A.; Bridges, J. Two-dimensional FDTD analysis of a
+1. S. C. Hagness, A. Taflove, and J. E. Bridges, "Two-dimensional FDTD analysis of a
 pulsed microwave confocal system for breast cancer detection: fixed-focus
-and antenna-array sensors. _IEEE Trans. Biomed. Eng._ **1998**, _45_,
-1470-1479. DOI:[10.1109/10.730440](https://doi.org/10.1109/10.730440). 
+and antenna-array sensors," _IEEE Trans. Biomed. Eng._, vol. 45, no. 12, pp. 1470-1479,
+DOI:[10.1109/10.730440](https://doi.org/10.1109/10.730440), 1998. 
 
-2. Reimer, T.; Solis-Nepote, M.; Pistorius, S. The application of an iterative
+2. T. Reimer, M. Solis-Nepote, and S. Pistorius, "The application of an iterative
 structure to the delay-and-sum and the delay-multiply-and-sum beamformers in
-breast microwave imaging. _Diagnostics_, submitted. 
+breast microwave imaging," _Diagnostics_, vol. 10, no. 6, pp. 1-15,
+DOI:[10.3390/diagnostics10060411](https://doi.org/10.3390/diagnostics10060411), 2020. 
 
 ## Getting Started
 
